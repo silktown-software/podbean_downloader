@@ -17,6 +17,7 @@ A package can be created by clone the repo and then running setup tools e.g.
 $ git clone git@github.com:silktown-software/podbean_downloader.git
 $ cd podbean_downloader
 $ python setup.py sdist
+$ cd dist
 $ pip install --user podbean_downloader-0.0.1.tar.gz
 ```
 
