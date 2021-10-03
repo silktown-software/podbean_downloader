@@ -29,7 +29,7 @@ Installing collected packages: podbean-downloader
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 ```
 
-You will need to add this path to be able to call the script from the command line.
+You will need to add this path to be able to call the script from the command line. **Note:** this path is system specific and differs on OS and how you installed python. When installing the package it will warn you that the directory isn't in the path.
 
 ## Usage
 
