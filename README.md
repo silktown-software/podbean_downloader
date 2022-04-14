@@ -35,7 +35,3 @@ You will need to add this path to be able to call the script from the command li
 ```
 $ podbean-downloader -u <podbean url> -p 2
 ```
-
-## TODO
-
-Currently this only support creator pages e.g. name.podbean.com and drills down to the mp3 download page through there.
