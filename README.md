@@ -1,7 +1,9 @@
 # Podbean page downloader
 
-Give a podcasters url on podbean it will download bulk all the podcasts. It defaults to the first page 
-(this is typically the last ten podcasts). However you can specify the number of pages you wish to go back and download. 
+**Note**: I don't have the time nor will to update this project. So, I am going to archive this repository.
+
+Give a podcaster's URL on Podbean it will bulk download all the podcasts. It defaults to the first page. 
+(this is typically the last ten podcasts). However, you can specify the number of pages you wish to go back and download. 
 
 ## Usage
 
@@ -11,9 +13,9 @@ $ podbean-downloader -u <podbean url> -p 2
 
 ## Installation From Source
 
-The python scripts are intended to be installed as an executable module.
+The Python scripts are intended to be installed as an executable module.
 
-While there is nothing operating system specific about the downloader (it is pure python code). There are some prerequisites that are required for installation from source.
+While there is nothing operating system specific about the downloader (it is pure Python code), some prerequisites are required for installation from source.
 
 ### Prerequisites 
 
@@ -62,7 +64,7 @@ You can then create the package using setuptools:
 $ python setup.py sdist
 ```
 
-**Note:** On Ubuntu and some other distros you may need to used `python3` instead of `python`
+**Note:** On Ubuntu and some other distros, you may need to use `python3` instead of `python`
 
 Then you can install it:
 
@@ -72,7 +74,7 @@ $ pip install --user dist/podbean_downloader-0.0.1.tar.gz
 
 **Note:** 
 
-If you don't have your python user scripts directory in your path you will need to add it. You will need to add this path to be able to call the script from the command line. **NOTE:** this path is system specific.
+If you don't have your Python user scripts directory in your path you will need to add it. You will need to add this path to call the script from the command line. **NOTE:** This path is system specific.
 
 Please see below in the [troubleshooting](#troubleshooting) section.
 
@@ -81,9 +83,9 @@ Please see below in the [troubleshooting](#troubleshooting) section.
 * `Python >= 3.9`
 * `pip`
 * `virtualenv`
-* `setuptools` - (not strictly required but you will want it for building the dist package)
+* `setuptools` - (not strictly required, but you will want it for building the dist package)
 
-Again many distros allow you to install these separately through their provided package manager. This will differ between distros.
+Again, many distros allow you to install these separately through their provided package manager. This will differ between distros.
 
 #### **Ubuntu and derivatives**
 
@@ -107,7 +109,7 @@ $ pip install -r requirements.txt
 
 ### Running
 
-While the virtualenv is active you can the downloader with the following command
+While the virtualenv is active, you can the downloader with the following command.
 
 ```bash
 $ python -m podbean_downloader
@@ -117,7 +119,7 @@ $ python -m podbean_downloader
 
 ### Can't find the executable / `podbean_download: command not found`
 
-When installing the package using `pip install --user`. It will place a small bash script that will make the script appear as an executable.
+When installing the package use `pip install --user`. It will place a small bash script that will make the script appear as an executable.
 
 If you don't have the python console scripts location in your path you will find a warning at the bottom of the output of `pip install --user`. It will look something like the following:
 
@@ -127,7 +129,7 @@ Installing collected packages: podbean-downloader
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 ```
 
-IF you are on Linux it may look like this:
+If you are on Linux, it may look like this:
 
 ```
 WARNING: The script tqdm is installed in '/home/<youruser>/.local/bin' which is not on PATH.
